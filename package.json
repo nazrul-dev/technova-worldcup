@@ -10,10 +10,8 @@
   },
   "dependencies": {
     "@next/font": "^13.0.5",
-    "@prisma/client": "^4.6.1",
     "country-flag-icons": "^1.5.5",
     "next": "13.0.5",
-    "prisma": "^4.6.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
