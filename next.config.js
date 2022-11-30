@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  webpack(config, options, { isServer }) {
+  images: {
+    unoptimized: true
+},
+  webpack(config, options) {
     config.module.rules.push({
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
       use: [
@@ -13,7 +16,7 @@ const nextConfig = {
         },
       ],
     });
-    config.experiments = { ...config.experiments, asyncWebAssembly: true }
+   
     return config;
   }
 };
